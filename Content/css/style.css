@@ -1,8 +1,14 @@
 @font-face {
 
     font-family: myriadPro;
-    src: url('../../font/MYRIADPRO-SEMIBOLD.OTF');
+    src: url('../../font/MYRIADPRO-REGULAR.OTF');
 
+}
+
+
+@font-face {
+    font-family: myriadSemiBoldPro;
+    src: url('../../font/MYRIADPRO-SEMIBOLD.OTF');
 }
 
 
@@ -46,6 +52,10 @@ th {
     transition: width 1s;
     display: none;
     
+}
+
+h1,h2,h3 {
+    font-family: myriadSemiBoldPro;
 }
 
 /*-----------------colors------------------*/
@@ -222,7 +232,7 @@ body::-webkit-scrollbar-button {display:none}
     font-size: 1rem;  
     border: none;
     outline: none;
-    color: #c4c4c4;
+    color:#c1c1c1;
     padding: 0.8rem 1rem;
     background-color: inherit;
     font-family: inherit;
@@ -253,7 +263,7 @@ body::-webkit-scrollbar-button {display:none}
   
   .language-content a {
     float: none;
-    color: black;
+    color: rgb(131, 131, 131);
     padding: 0.6rem 1.5rem;
     text-decoration: none;
     display: block;
@@ -278,7 +288,7 @@ body::-webkit-scrollbar-button {display:none}
    .adress-info {
       
       padding: 1rem;
-      color: #a8a8af;
+      color:#c1c1c1;
       font-size: 0.8rem;
   }
 
@@ -290,8 +300,12 @@ body::-webkit-scrollbar-button {display:none}
   .tel-info,.mail-info {
       
     padding: 1rem;
-    color: #a8a8af;
+    color:#c1c1c1;
     font-size: 1rem;
+}
+
+.tel-info,.mail-info {
+    color:#E3000F;
 }
 
 .tel-info,.adress-info i {
@@ -313,7 +327,7 @@ body::-webkit-scrollbar-button {display:none}
 
 .navbar-menu a {
     padding:0.8rem;
-    color: #70706F;
+    color:#c3c3c3 ;
     text-decoration: none;
     transition: all 400ms ease;
 }
@@ -1582,7 +1596,7 @@ pre {
         } 
 
         .footer-section h4 {
-            color: #8c8c8c;
+            color:#cecece;
         }   
 
     .footer-content {
@@ -1609,9 +1623,9 @@ pre {
     }
 
     .footer-content p,span {
-        padding-left: 1rem;
+    padding-left: 1rem;
     padding-right: 10rem;
-    color: rgb(179 179 179);
+    color:#c1c1c1;
     padding-top: 1rem;
     }
 
@@ -1641,7 +1655,7 @@ pre {
     .links ul li a {
         font-size: 1.5rem;
         padding-right: 1rem;
-        color: rgb(179 179 179);
+        color:#c1c1c1;
         text-decoration: none;
     }
 
