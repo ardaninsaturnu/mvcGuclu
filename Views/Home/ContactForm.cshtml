@@ -1,0 +1,38 @@
+﻿@using companyproject.Entities
+@model contact_info
+
+
+
+@if (Model != null)
+{
+    <div class="contact-left animate__animated animate__slideInLeft">
+        <div class="contact-info">
+            <h4>Contact Us</h4>
+            <hr>
+            <div class="contact-info-box">
+                <i class="fas fa-phone-alt"><span><strong>Tel:</strong><p>@Model.phone</p></span></i>
+                <i class="far fa-paper-plane"><span><strong>Mail:</strong><p>@Model.mail</p></span></i>
+                <i class="fab fa-whatsapp"><span><strong>Whatsapp:</strong><p>@Model.phone</p></span></i>
+            </div>
+        </div>
+        <img src="../images/Message Sent.svg" alt="" class="animate__animated animate__zoomIn">
+    </div>
+}
+else
+{
+    <div class="contact-left animate__animated animate__slideInLeft">
+        <div class="contact-info">
+            <h4>Contact Us</h4>
+            <hr>
+            <div class="contact-info-box">
+                <i class="fas fa-phone-alt"><span><strong>Tel:</strong><p>güncellenecek</p></span></i>
+                <i class="far fa-paper-plane"><span><strong>Mail:</strong><p>güncellenecek</p></span></i>
+                <i class="fab fa-whatsapp"><span><strong>Whatsapp:</strong><p>güncellenecek</p></span></i>
+            </div>
+        </div>
+        <img src="../images/Message Sent.svg" alt="" class="animate__animated animate__zoomIn">
+    </div>
+}
+
+
+
