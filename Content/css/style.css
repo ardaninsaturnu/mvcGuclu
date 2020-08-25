@@ -237,6 +237,7 @@ body::-webkit-scrollbar-button {display:none}
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    transition: all 0.5s ease;
   }
 
   .language-button i {
@@ -245,7 +246,7 @@ body::-webkit-scrollbar-button {display:none}
   }
   
   .navbar a:hover, .language:hover .language-button {
-    background-color: #E3000F;
+    background-color: rgb(227 0 15);
   }
   
   .language-content {
@@ -290,7 +291,10 @@ body::-webkit-scrollbar-button {display:none}
       padding: 1rem;
       color:#c1c1c1;
       font-size: 0.8rem;
+      transition: all 0.5s ease;
   }
+
+  
 
   .mail-info i {
       padding-right: 0.5rem;
@@ -302,10 +306,13 @@ body::-webkit-scrollbar-button {display:none}
     padding: 1rem;
     color:#c1c1c1;
     font-size: 1rem;
+    transition: all 0.5s ease;
 }
 
-.tel-info,.mail-info {
-    color:#E3000F;
+
+.tel-info:hover,.mail-info:hover,.adress-info:hover {
+    color: rgb(227 0 15);
+    cursor: pointer;
 }
 
 .tel-info,.adress-info i {
@@ -329,11 +336,11 @@ body::-webkit-scrollbar-button {display:none}
     padding:0.8rem;
     color:#c3c3c3 ;
     text-decoration: none;
-    transition: all 400ms ease;
+    transition: all 0.5s ease;
 }
 
 .navbar-menu a:hover {
-    color: crimson;
+    color: rgb(227 0 15);
 }
 
 .shop-button {
@@ -935,10 +942,10 @@ background-image: linear-gradient(19deg, #FAACA8 0%, #d2c5fb 100%);
 }
 
 .title-box h5 {
-    color: chocolate;
+    color: rgb(227 0 15);
 }
 .title-box p {
-    color: #adadad;
+    color: #e0e0e0;
 }
 
 .title-text {
@@ -961,7 +968,7 @@ background-image: linear-gradient(19deg, #FAACA8 0%, #d2c5fb 100%);
     margin: 5% 0;
     display: flex;
     justify-content: center;
-    border-radius: 0.2rem;
+    border-radius: 0.4rem;
     transition: all 0.8s ease;
     
 }
@@ -995,12 +1002,13 @@ background-image: linear-gradient(19deg, #FAACA8 0%, #d2c5fb 100%);
 
 .product-paragraph p {
     line-height: 1.7rem;
-    color: #adadad;
+    color: #e0e0e0;
+    padding-bottom: 1rem;
 }
 
 .products-image {
     border: 0.5rem solid beige;
-    max-height: 18rem;
+    max-height: 20rem;
     width: 100%;
 }
 
@@ -1032,7 +1040,9 @@ background-image: linear-gradient(19deg, #FAACA8 0%, #d2c5fb 100%);
 /*-----------------------------------------------------single product----------------------------------------------------------------*/
 
 .product-title p{
-    color: #adadad;
+    color: #cccbcb;
+    letter-spacing: 0.5px;
+    line-height: 1.7rem;
 }
 
 .icon-container {
@@ -1424,6 +1434,13 @@ pre {
     width: 20%;
 }
 
+
+.hr-button {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+
 /*-----------------------------------------------------------------contact style ----------------------------------------------------------*/
 
     .wrapper {
@@ -1469,9 +1486,26 @@ pre {
         flex-direction: column;
         
     }
+
+    .whatsapp-btn {
+        background-color: rgb(59 206 103);
+        padding: 0.2rem 0.1rem;
+        margin-top: 1rem;
+    }
+
+    .whatsapp-btn i::before {
+        color: white;
+    }
+
+    .contact-info-box .whatsapp-btn i span {
+        text-align:center;
+        color:white;
+    }
+
+
     .contact-info-box i {
         margin: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.22rem;
         color: #a7a7a7;
     }
 
@@ -1484,16 +1518,27 @@ pre {
     font-weight: 500;
     }
     
+    .contact-map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    
+
 
     .contact-left,.contact-right {
         width: 40%;
         display: flex;
         flex-direction: column;
-        background-color: rgba(207, 206, 206, 0.281);
+        background-color: rgba(214, 214, 214, 0.096);
         padding: 2rem;
         border-radius: 1rem;
     }
 
+
+
+    
    
 
     
@@ -1517,7 +1562,7 @@ pre {
         width: 100%;
         display: flex;
         flex-direction: column;
-        color: #9c9c9c;
+        color: #c7c7c7;
     }
 
     
@@ -1525,16 +1570,16 @@ pre {
         width: 100%;
         height: 2.5rem;
         margin: 0.5rem 0;
-        padding: 0.5rem;
+        padding: 1.4rem 1rem;
         outline: none;
-        border-radius: 0.5rem;
-        border: 0.05rem solid #80808038;
+        border-radius: 0.3rem;
+        border: 0.04rem solid #d0d0d038;
     
     }
 
     .contact-right form label textarea {
-        border-radius: 0.5rem;
-        border: 0.04rem solid #80808038;
+        border-radius: 0.3rem;
+        border: 0.04rem solid #d0d0d038;
     }
 
     .contact-right form button {
@@ -1548,6 +1593,11 @@ pre {
         background-color: #69ff96b2;
         font-size: 1.3rem;
         color: rgb(255, 255, 255);
+    }
+
+
+    .contact-right form button:hover {
+        background-color:#23fb64b2 ;
     }
       
 /*-------------------------------------------------------------------foteeer design-----------------------------------------------------*/
@@ -1625,9 +1675,14 @@ pre {
     .footer-content p,span {
     padding-left: 1rem;
     padding-right: 10rem;
-    color:#c1c1c1;
+    color:#cecece;
     padding-top: 1rem;
+    transition: all 0.5s ease;
     }
+
+    .footer-content p:hover ,span:hover {
+        color:crimson;
+        }
 
 
     .links {
@@ -1680,12 +1735,7 @@ pre {
         flex-direction: row;
     }
 
-   
-
-
   
-    
-   
 
 
     .footer-bottom {
@@ -1745,8 +1795,13 @@ pre {
        color: white;
    }
 
-   .footer-form input[type="submit"]:hover {
+   .send {
+        transition: all 0.5s ease;
+   }
+
+   .send:hover {
     background-color:crimson;
+    color: white;
 }
 
 
