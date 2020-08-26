@@ -417,7 +417,7 @@ body::-webkit-scrollbar-button {display:none}
 
 /*-----------------------------breadcrumb------------------------------------*/
 .breadcrumb {
-    background-color:#f6f6f6;
+    background-color:#f6f6f67d;
 }
 
 .breadcrumb a {

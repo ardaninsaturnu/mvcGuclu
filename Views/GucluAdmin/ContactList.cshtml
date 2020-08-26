@@ -32,7 +32,10 @@
 
                     </th>
                     <th class="th-sm">Message
-
+                    </th>
+                    <th class="th-sm">
+                        Delete
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -54,6 +57,9 @@
                         <td>
                             @item.Messages
                         </td>
+                        <td>
+                        <button class="btn btn-danger"><i class="far fa-trash-alt"></i></button>
+                    </td>
                     </tr>
                 }
             </tbody>

@@ -35,6 +35,9 @@
                     CV
 
                 </th>
+                <th class="th-sm">
+                    Delete
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -49,6 +52,9 @@
                     <td>@item.birth_date</td>
                     <td>
                         <a href="@item.cvPath" class="btn btn-primary"><span class="fas fa-download"></span> Download</a>
+                    </td>
+                    <td>
+                        <button><i class="far fa-trash-alt"></i></button>
                     </td>
                 </tr>
             }
@@ -73,6 +79,9 @@
                 </th>
                 <th>
                     CV
+                </th>
+                <th>
+                    Delete
                 </th>
             </tr>
         </tfoot>
